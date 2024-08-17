@@ -1,0 +1,101 @@
+import java.util.*;
+
+class HelloWorld {
+    
+    public static void main(String[] args) {
+        
+       Scanner scanner = new Scanner(System.in);
+       
+       System.out.println("Enter the first value ");
+         int numOne = scanner.nextInt();
+         
+       System.out.println("Enter the second number");
+         int numTwo = scanner.nextInt();
+        
+       System.out.println("Addition Operation is  : "  + (numOne + numTwo));   
+       
+       System.out.println("Subtraction Operation is :" +(numOne -numTwo ) );
+       
+       System.out.println("Multiplication Operation is : " + (numOne*numTwo));
+       
+       System.out.println("Division Operation is : " + (numOne/numTwo));
+
+    }
+}
+
+
+
+
+
+class HelloWorld {
+    
+    public static void main(String[] args) {
+        
+       Scanner scanner = new Scanner(System.in);
+       
+       System.out.println("Enter the number ");
+         int numOne = scanner.nextInt();
+          
+         if(numOne%2 == 0){
+             System.out.println("Given number is even number");
+         }else{
+             System.out.println("Given number is odd number");
+         }
+     
+    }
+}
+
+
+
+
+import java.util.*;
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    char operator;
+    int  result;
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Choose an operator: +, -, *, or /");
+    operator = input.next().charAt(0);
+
+    System.out.println("Enter first number");
+    int number1 = input.nextInt();
+
+    System.out.println("Enter second number");
+   int  number2 = input.nextInt();
+
+    switch (operator) {
+
+      case '+':
+        result = number1 + number2;
+        System.out.println(number1 + " + " + number2 + " = " + result);
+        break;
+
+      case '-':
+        result = number1 - number2;
+        System.out.println(number1 + " - " + number2 + " = " + result);
+        break;
+
+      case '*':
+        result = number1 * number2;
+        System.out.println(number1 + " * " + number2 + " = " + result);
+        break;
+
+      case '/':
+        result = number1 / number2;
+        System.out.println(number1 + " / " + number2 + " = " + result);
+        break;
+
+      default:
+        System.out.println("Invalid operator!");
+        break;
+    }
+
+    input.close();
+  }
+}
